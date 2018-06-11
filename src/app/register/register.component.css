@@ -1,0 +1,37 @@
+.contInfo {
+  display: inline-block;
+  border-left: 10px solid #EEEEEE; }
+
+.myCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #212121; }
+
+.myForm {
+  display: block;
+  background: #EEEEEE;
+  height: 540px;
+  width: 320px; }
+
+.row {
+  width: auto; }
+
+.myForm mat-icon {
+  text-align: center; }
+
+#userIcon {
+  text-align: center; }
+
+#bottoneLogin {
+  width: 322px;
+  height: 70px;
+  outline: none;
+  border-radius: 0 !important;
+  color: white !important; }
+
+button {
+  outline: none; }
+
+/*# sourceMappingURL=register.component.css.map */
