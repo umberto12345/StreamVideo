@@ -12,7 +12,7 @@ export const appRoutes: Routes = [
 
   { path: 'login', component: LoginComponent ,pathMatch :'full'  },
   { path: 'register', component: LoginComponent , pathMatch:'full' },
-  {path:'Anime', component:ListaAnimeComponent, pathMatch:'full'},
+  {path:'Anime', component:ListaAnimeComponent, pathMatch:'full',canActivate:[AdminGuard]},
 
   { path: 'test/y', component: TestComponent , canActivate :[AuthGuard]},
   { path: '404' , component: NotFoundComponent , canActivate: [AuthGuard]},

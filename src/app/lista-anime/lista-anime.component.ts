@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {AnimeService} from '../anime.service';
+import {AuthService} from '../auth.service';
+
 
 @Component({
   selector: 'app-lista-anime',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaAnimeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private auth: AuthService) {
+
+
+  }
 
   ngOnInit() {
+
   }
+logoutAdmin()
+{
+  this.auth.logoutAdmin();
+}
+
 
 }

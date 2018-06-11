@@ -14,13 +14,7 @@ export class AuthService {
 
   private isAdmin:any;
   constructor(
-    private http: HttpClient,private router:Router) {
-
-    console.log(this.rules);
-    console.log(this.rules);
-
-
-  }
+    private http: HttpClient,private router:Router) {}
 
   url = 'https://api001.app/api/login';
   login(email: string, password: string) {

@@ -1,11 +1,15 @@
 import { Injectable } from '@angular/core';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 
-@Injectable({
-  providedIn: 'root'
-})
+import 'rxjs/add/operator/map';
+
+@Injectable()
+
 export class AnimeService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+  }
+
 
 
 }

@@ -19,6 +19,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AuthService} from './auth.service';
 import { ProfileComponent } from './profile/profile.component';
 import { ListaAnimeComponent } from './lista-anime/lista-anime.component';
+import {AnimeService} from './anime.service';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,7 @@ import { ListaAnimeComponent } from './lista-anime/lista-anime.component';
   exports:[RouterModule],
   providers: [ HttpClient,
 
-    AuthGuard, AdminGuard , AuthService,
+    AuthGuard, AdminGuard , AuthService, AnimeService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,
